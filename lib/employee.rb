@@ -1,4 +1,12 @@
 class Employee < ActiveRecord::Base
-
   belongs_to :store
+
+  validates :first_name, presence: true
+  validates :last_name, presence: true
+  validates :hourly_rate, :inclusion => 40..200
+  validates_associated :store
+
+  def must_always_have_a_first_name
+
+
 end

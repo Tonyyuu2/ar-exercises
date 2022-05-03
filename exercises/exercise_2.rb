@@ -5,3 +5,16 @@ puts "Exercise 2"
 puts "----------"
 
 # Your code goes here ...
+@store1 = Store.find_by(id: 1)
+
+@store2 = Store.find_by(id: 2)
+
+# binding.pry
+
+@store1.update(name: 'Coquitlam')
+
+# @store1.name = 'Coquitlam'
+# @store1.save
+
+puts @store1.inspect
+puts @store2.inspect

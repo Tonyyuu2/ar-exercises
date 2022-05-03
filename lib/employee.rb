@@ -6,7 +6,4 @@ class Employee < ActiveRecord::Base
   validates :hourly_rate, :inclusion => 40..200
   validates_associated :store
 
-  def must_always_have_a_first_name
-
-
 end

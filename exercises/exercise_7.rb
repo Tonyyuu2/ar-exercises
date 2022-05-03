@@ -11,3 +11,8 @@ puts "----------"
 
 # Your code goes here ...
 
+print "What is your store name?"
+store_name = gets.chomp
+newstore = Store.create(name: store_name)
+puts newstore.valid?
+puts newstore.errors.full_messages
